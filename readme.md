@@ -143,7 +143,7 @@ Setting `colonNotation` to `true` overrides the following options to `false`:
 Type: `boolean`\
 Default: `false`
 
-Setting `padUnits` to `true` will show the time with a space before the unit.
+Setting `padUnits` to `true` will show the time with a space before the unit `5h 1m 45s` → `5 h 1 m 45 s`.
 
 ## Related
 
