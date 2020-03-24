@@ -34,6 +34,10 @@ prettyMilliseconds(1335669000, {verbose: true});
 prettyMilliseconds(95500, {colonNotation: true});
 //=> '1:35.5'
 
+// `SINotation` option
+prettyMilliseconds(1337000000, {SINotation: true});
+//=> '15 d 11 h 23 m 20 s'
+
 // `formatSubMilliseconds` option
 prettyMilliseconds(100.400080, {formatSubMilliseconds: true})
 //=> '100ms 400µs 80ns'

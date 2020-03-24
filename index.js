@@ -13,6 +13,11 @@ module.exports = (milliseconds, options = {}) => {
 		options.formatSubMilliseconds = false;
 		options.separateMilliseconds = false;
 		options.verbose = false;
+		options.SINotation = false;
+	}
+
+	if (options.SINotation) {
+		options.verbose = false;
 	}
 
 	if (options.compact) {
@@ -38,7 +43,9 @@ module.exports = (milliseconds, options = {}) => {
 			valueString = '0'.repeat(Math.max(0, minLength - wholeDigits)) + valueString;
 		} else {
 			prefix = '';
-			suffix = options.verbose ? ' ' + pluralize(long, value) : short;
+			suffix = options.verbose ?
+				' ' + pluralize(long, value) :
+				(options.SINotation ? ' ' : '') + short;
 		}
 
 		result.push(prefix + valueString + suffix);

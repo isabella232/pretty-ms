@@ -72,10 +72,21 @@ declare namespace prettyMilliseconds {
 		- `formatSubMilliseconds`
 		- `separateMilliseconds`
 		- `verbose`
+		- `SINotation`
 
 		@default false
 		*/
 		readonly colonNotation?: boolean;
+
+		/**
+		Setting `SINotation` to `true` will show the time as SI notation with space between number and unit.
+
+		Setting `colonNotation` to `true` overrides the following options to `false`:
+		- `verbose`
+
+		@default false
+		*/
+	 readonly SINotation?: boolean;
 	}
 }
 
