@@ -74,7 +74,6 @@ declare namespace prettyMilliseconds {
 		- `formatSubMilliseconds`
 		- `separateMilliseconds`
 		- `verbose`
-		- `padUnits`
 
 		@default false
 		*/

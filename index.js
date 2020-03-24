@@ -13,7 +13,6 @@ module.exports = (milliseconds, options = {}) => {
 		options.formatSubMilliseconds = false;
 		options.separateMilliseconds = false;
 		options.verbose = false;
-		options.padUnits = false;
 	}
 
 	if (options.verbose) {

@@ -137,7 +137,6 @@ Setting `colonNotation` to `true` overrides the following options to `false`:
 - `formatSubMilliseconds`
 - `separateMilliseconds`
 - `verbose`
-- `padUnits`
 
 ##### padUnits
 
