@@ -1,6 +1,6 @@
 {
 	"name": "@postman/pretty-ms",
-	"version": "6.0.1",
+	"version": "6.1.0",
 	"description": "Convert milliseconds to a human readable string: `1337000000` → `15d 11h 23m 20s`",
 	"license": "MIT",
 	"repository": "https://github.com/postmanlabs/pretty-ms",
