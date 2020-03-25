@@ -44,6 +44,8 @@ declare namespace prettyMilliseconds {
 		/**
 		Use full-length units: `5h 1m 45s` → `5 hours 1 minute 45 seconds`.
 
+		This option implicitly sets the `padUnits` option to `true`.
+
 		@default false
 		*/
 		readonly verbose?: boolean;
@@ -76,6 +78,13 @@ declare namespace prettyMilliseconds {
 		@default false
 		*/
 		readonly colonNotation?: boolean;
+
+		/**
+		Setting `padUnits` to `true` will show the time with a space before the unit `5h 1m 45s` → `5 h 1 m 45 s`.
+
+		@default false
+		*/
+		readonly padUnits?: boolean;
 	}
 }
 

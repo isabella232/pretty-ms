@@ -21,3 +21,6 @@ expectType<string>(
 expectType<string>(
 	prettyMilliseconds(1335669000, {colonNotation: true})
 );
+expectType<string>(
+	prettyMilliseconds(1335669000, {padUnits: true})
+);

@@ -15,6 +15,10 @@ module.exports = (milliseconds, options = {}) => {
 		options.verbose = false;
 	}
 
+	if (options.verbose) {
+		options.padUnits = true;
+	}
+
 	if (options.compact) {
 		options.secondsDecimalDigits = 0;
 		options.millisecondsDecimalDigits = 0;
@@ -38,7 +42,7 @@ module.exports = (milliseconds, options = {}) => {
 			valueString = '0'.repeat(Math.max(0, minLength - wholeDigits)) + valueString;
 		} else {
 			prefix = '';
-			suffix = options.verbose ? ' ' + pluralize(long, value) : short;
+			suffix = (options.padUnits ? ' ' : '') + (options.verbose ? pluralize(long, value) : short);
 		}
 
 		result.push(prefix + valueString + suffix);

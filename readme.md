@@ -34,6 +34,10 @@ prettyMilliseconds(1335669000, {verbose: true});
 prettyMilliseconds(95500, {colonNotation: true});
 //=> '1:35.5'
 
+// `padUnits` option
+prettyMilliseconds(1337000000, {padUnits: true});
+//=> '15 d 11 h 23 m 20 s'
+
 // `formatSubMilliseconds` option
 prettyMilliseconds(100.400080, {formatSubMilliseconds: true})
 //=> '100ms 400µs 80ns'
@@ -133,6 +137,13 @@ Setting `colonNotation` to `true` overrides the following options to `false`:
 - `formatSubMilliseconds`
 - `separateMilliseconds`
 - `verbose`
+
+##### padUnits
+
+Type: `boolean`\
+Default: `false`
+
+Setting `padUnits` to `true` will show the time with a space before the unit `5h 1m 45s` → `5 h 1 m 45 s`.
 
 ## Related
 
